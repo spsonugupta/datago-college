@@ -1,65 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Dr. S N Medical College, Jodhpur</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:#f2f4f8;
+      color:#333;
     }
-    header {
-      background: #0b3c5d;
-      color: white;
-      padding: 15px;
-      text-align: center;
+
+    /* Header */
+    header{
+      background:linear-gradient(135deg,#0b3c5d,#1e88e5);
+      color:white;
+      padding:50px 20px;
+      text-align:center;
     }
-    nav {
-      background: #1d2731;
-      padding: 10px;
-      text-align: center;
+
+    header h1{
+      margin:0;
+      font-size:34px;
+      letter-spacing:1px;
     }
-    nav a {
-      color: white;
-      margin: 10px;
-      text-decoration: none;
-      font-weight: bold;
+
+    header p{
+      margin-top:10px;
+      font-size:16px;
+      opacity:0.9;
     }
-    section {
-      padding: 20px;
+
+    /* Navigation */
+    nav{
+      background:white;
+      box-shadow:0 4px 12px rgba(0,0,0,0.08);
+      text-align:center;
+      position:sticky;
+      top:0;
+      z-index:100;
     }
-    footer {
-      background: #0b3c5d;
-      color: white;
-      text-align: center;
-      padding: 10px;
+
+    nav a{
+      display:inline-block;
+      padding:15px 18px;
+      color:#0b3c5d;
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    nav a:hover{
+      background:#e3f2fd;
+      border-radius:6px;
+    }
+
+    /* Section Cards */
+    .section{
+      max-width:1000px;
+      margin:30px auto;
+      background:white;
+      padding:35px;
+      border-radius:14px;
+      box-shadow:0 12px 30px rgba(0,0,0,0.08);
+    }
+
+    .section h2{
+      color:#0b3c5d;
+      margin-bottom:15px;
+    }
+
+    /* Courses Grid */
+    .courses ul{
+      list-style:none;
+      padding:0;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:15px;
+    }
+
+    .courses li{
+      background:#f5f7fb;
+      padding:15px;
+      border-radius:10px;
+      font-weight:500;
+      text-align:center;
+    }
+
+    /* Footer */
+    footer{
+      background:#0b3c5d;
+      color:white;
+      text-align:center;
+      padding:18px;
+      margin-top:40px;
+      font-size:14px;
+    }
+
+    /* Responsive */
+    @media(max-width:600px){
+      header h1{
+        font-size:26px;
+      }
     }
   </style>
 </head>
 
 <body>
+<a href="sngoods.html" style="
+  display:inline-block;
+  margin:15px 0;
+  padding:10px 18px;
+  background:#0b3c5d;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:bold;
+">
+  ← Back to Home
+</a>
 
 <header>
   <h1>Dr. S N Medical College, Jodhpur</h1>
-  <p>Knowledge | Innovation | Excellence</p>
+  <p>Knowledge • Innovation • Excellence</p>
 </header>
 
 <nav>
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Courses</a>
-  <a href="#">Admission</a>
-  <a href="#">Contact</a>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#courses">Courses</a>
+  <a href="#admission">Admission</a>
+  <a href="#contact">Contact</a>
 </nav>
 
-<section>
-  <h2>Welcome to Dr. S N Medical College, Jodhpur</h2>
+<div class="section" id="home">
+  <h2>Welcome</h2>
   <p>
-    Dr. S N Medical College, Jodhpur is committed to providing quality education
-    and building a strong future for students.
+    Dr. S N Medical College, Jodhpur is committed to excellence in medical education,
+    research, and healthcare. We aim to nurture competent medical professionals
+    with strong ethical values.
   </p>
-</section>
-  <footer>
+</div>
+
+<div class="section" id="about">
+  <h2>About the College</h2>
+  <p>
+    Dr. S N Medical College is a premier institution focused on providing
+    quality medical education supported by experienced faculty,
+    modern infrastructure, and patient-centered learning.
+  </p>
+</div>
+
+<div class="section courses" id="courses">
+  <h2>Courses Offered</h2>
+  <ul>
+    <li>MBBS</li>
+    <li>MD – General Medicine</li>
+    <li>MS – General Surgery</li>
+    <li>MD – Pediatrics</li>
+    <li>MD – Obstetrics & Gynaecology</li>
+  </ul>
+</div>
+
+<div class="section" id="admission">
+  <h2>Admission</h2>
+  <p>
+    Admissions are conducted as per government regulations and university norms.
+    Eligible candidates are required to follow the official admission procedure.
+  </p>
+</div>
+
+<div class="section" id="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Location:</strong> Jodhpur, Rajasthan</p>
+  <p><strong>Email:</strong> info@drsnmedicalcollege.edu</p>
+  <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+</div>
+
+<footer>
   © 2026 Dr. S N Medical College, Jodhpur • All Rights Reserved
 </footer>
 
