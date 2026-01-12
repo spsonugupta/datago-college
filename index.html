@@ -1,75 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>S N GOODS & SERVICES | Jodhpur</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      color: #333;
-    }
-    header {
-      background: #0b3c5d;
-      color: white;
-      padding: 25px;
-      text-align: center;
-    }
-    section {
-      padding: 25px;
-      background: white;
-      margin: 15px;
-      border-radius: 6px;
-    }
-    h2 {
-      color: #0b3c5d;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    footer {
-      background: #0b3c5d;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 20px;
-    }
-    .contact a {
-      display: inline-block;
-      margin: 10px 10px 0 0;
-      padding: 12px 18px;
-      text-decoration: none;
-      color: white;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    .call {
-      background: #007bff;
-    }
-    .whatsapp {
-      background: #25D366;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>S N GOODS & SERVICES | Jodhpur</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#f2f4f8;
+  color:#333;
+}
+
+header{
+  background:linear-gradient(135deg,#3a1c71,#4776e6);
+  color:#fff;
+  padding:40px 20px;
+  text-align:center;
+}
+
+header h1{
+  margin:0;
+  font-size:32px;
+  letter-spacing:1px;
+}
+
+header p{
+  margin-top:10px;
+  font-size:16px;
+  opacity:0.9;
+}
+
+.section{
+  background:#fff;
+  margin:25px auto;
+  padding:30px;
+  max-width:1000px;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.section h2{
+  color:#3a1c71;
+  margin-bottom:15px;
+}
+
+.services ul{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
+  padding-left:0;
+  list-style:none;
+}
+
+.services li{
+  background:#f7f8fc;
+  padding:15px;
+  border-radius:8px;
+  font-weight:500;
+}
+
+.contact-buttons a{
+  display:inline-block;
+  margin:10px 10px 0 0;
+  padding:14px 22px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  color:white;
+  transition:0.3s;
+}
+
+.call{
+  background:#4776e6;
+}
+
+.whatsapp{
+  background:#25D366;
+}
+
+.contact-buttons a:hover{
+  transform:scale(1.05);
+  opacity:0.9;
+}
+
+footer{
+  background:#1f1f1f;
+  color:#bbb;
+  text-align:center;
+  padding:15px;
+  font-size:14px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
   <h1>S N GOODS & SERVICES</h1>
-  <p>Digital & Government Services | Jodhpur</p>
+  <p>Digital & Government Services • Jodhpur</p>
 </header>
 
-<section>
+<div class="section">
   <h2>Welcome</h2>
   <p>
-    S N GOODS & SERVICES provides reliable digital and government-related services
-    to individuals and businesses. We ensure accurate documentation and timely support.
+    We provide reliable digital and government-related services to individuals and businesses.
+    Our focus is on accuracy, transparency, and fast service delivery.
   </p>
-</section>
+</div>
 
-<section>
+<div class="section services">
   <h2>Our Services</h2>
   <ul>
     <li>Digital Signature Certificate (DSC)</li>
@@ -80,28 +124,29 @@
     <li>Driving Licence Related Services</li>
     <li>Other Government & Digital Services</li>
   </ul>
-</section>
+</div>
 
-<section>
+<div class="section">
   <h2>About Us</h2>
   <p>
-    S N GOODS & SERVICES is a Jodhpur-based service provider offering assistance
-    in digital and government documentation. We focus on transparency,
-    accuracy, and customer satisfaction.
+    S N GOODS & SERVICES is a Jodhpur-based service provider offering complete assistance
+    for digital and government documentation with a customer-first approach.
   </p>
-</section>
+</div>
 
-<section class="contact">
+<div class="section">
   <h2>Contact Us</h2>
   <p><strong>Location:</strong> Jodhpur, Rajasthan</p>
   <p><strong>Mobile / WhatsApp:</strong> 7426058717</p>
 
-  <a href="tel:7426058717" class="call">📞 Call Now</a>
-  <a href="https://wa.me/917426058717" class="whatsapp">💬 WhatsApp</a>
-</section>
+  <div class="contact-buttons">
+    <a href="tel:7426058717" class="call">📞 Call Now</a>
+    <a href="https://wa.me/+91 7426058717" class="whatsapp">💬 WhatsApp</a>
+  </div>
+</div>
 
 <footer>
-  © 2026 S N GOODS & SERVICES | All Rights Reserved
+  © 2026 S N GOODS & SERVICES • All Rights Reserved
 </footer>
 
 </body>
